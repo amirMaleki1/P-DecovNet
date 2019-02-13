@@ -1,2 +1,2 @@
 # P-DecovNet
-Deep Neural Network for image processing
+Deep Neural Network for Semantic Segmentation in image processing
