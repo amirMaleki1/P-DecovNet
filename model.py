@@ -288,6 +288,8 @@ def inference(images, labels, batch_size, phase_train):
 
 
          """ Pyramid Pooling Module"""
+          
+          
          with tf.variable_scope('PyP', dtype=tf.float32):
               rcu01 = conv_layer(images, [3, 3, images.get_shape().as_list()[3], 64], phase_train, activation=True, Before_ReLu=True, name='RCU01')
               rcu11 = tf.add(rcu01, conv_layer(rcu01, [3, 3, rcu01.get_shape().as_list()[3], 64], phase_train, name='RCU11'))
@@ -429,8 +431,8 @@ def train(total_loss, global_step):
 def test(FLAGS):
   max_steps = FLAGS.max_steps
   batch_size = FLAGS.batch_size
-  train_dir = FLAGS.log_dir # /home/ai/Desktop/SegNet/Logs
-  test_dir = FLAGS.test_dir # /home/ai/Desktop/SegNet/CamVid/train.txt
+  train_dir = FLAGS.log_dir # /home/ai/Desktop/pdecovnet/Logs
+  test_dir = FLAGS.test_dir # /home/ai/Desktop/pdecovnet/CamVid/train.txt
   test_ckpt = FLAGS.testing
   image_w = FLAGS.image_w
   image_h = FLAGS.image_h
@@ -488,9 +490,9 @@ def test(FLAGS):
 def training(FLAGS, is_finetune=False):
   max_steps = FLAGS.max_steps
   batch_size = FLAGS.batch_size
-  train_dir = FLAGS.log_dir   #"/home/ai/Desktop/SegNet/logs"
-  image_dir = FLAGS.image_dir #"/home/ai/Desktop/SegNet/CamVid/train.txt"
-  val_dir = FLAGS.val_dir     #"/home/ai/Desktop/SegNet/CamVid/val.txt"
+  train_dir = FLAGS.log_dir   #"/home/ai/Desktop/pdecovnet/logs"
+  image_dir = FLAGS.image_dir #"/home/ai/Desktop/pdecovnet/CamVid/train.txt"
+  val_dir = FLAGS.val_dir     #"/home/ai/Desktop/pdecovnet/CamVid/val.txt"
   finetune_ckpt = FLAGS.finetune
   image_w = FLAGS.image_w
   image_h = FLAGS.image_h
