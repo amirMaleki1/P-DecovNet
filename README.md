@@ -5,9 +5,8 @@ Convolution-Deconvolution Network
 
 ![alt text](https://github.com/malekijoo/P-DecovNet/blob/master/img/P-DecovNet.png)
 
-For running this code, you should download [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/) dataset
- dataset. 
-
+For running this code, you should download [CamVid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/) dataset. 
+Modify the addresses in files and run it
 
 
 This repository is under construction.
