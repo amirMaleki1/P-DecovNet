@@ -9,4 +9,3 @@ For running this code, you should download [CamVid](http://mi.eng.cam.ac.uk/rese
 Modify the addresses in files and run it
 
 
-This repository is under construction.
